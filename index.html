@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Christmas-Special-Party Card Maker</title>
+	
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/features.css" type="text/css">
+	
+	<link href='http://fonts.googleapis.com/css?family=Abril+Fatface|Snippet|Chango|Codystar|Oldenburg|New+Rocker|Eagle+Lake|Great+Vibes|Berkshire+Swash|Varela+Round|Cherry+Swash' rel='stylesheet' type='text/css'>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	
+</head>
+
+
+<body>
+
+<div id='wrapper'>
+
+	<h1><img class="header-img-left" src="images/candy-canes-small.png"> Make Your Own Christmas-Special-Party Card <img class="header-img-right" src="images/candy-canes-small.png"></h1>
+	
+	<!-- Top section with the live preview -->
+	<div id='preview'>
+	
+		<div id='card-background'>
+			<div id='canvas'>
+				<div id='greeting-output'></div>
+				<div id='recipient-output'></div>
+			</div>
+				
+				<div id="date-info">
+					<p class="date-footer">15th Annual Christmas Special Party &nbsp; &bull; &nbsp; Saturday, December 21st &nbsp; &bull; &nbsp; 9pm &nbsp; &bull; &nbsp; Address Goes Here</p>
+				</div>
+		</div>
+		
+		<div class="clearfix"></div>
+		
+		<!-- Buttons -->
+	<div id="buttons">
+		<input type='button' id='refresh-btn' value='Start over'>
+		<input type='button' id='print-btn' value='Print'>
+	</div>
+	</div>
+
+	<!-- Bottom with all the controls -->
+	<div id='controls-1'>
+									
+		<!-- Background picture -->
+		<div id="backgrounds">
+			<h2>Pick a background image</h2>
+			<div class="background-img" id="pinecones" alt='Pinecones'></div>
+			<div class="background-img" id="present" alt='Presents'></div>
+			<div class="background-img" id="crystal-ball-ornament" alt='Crystal Ball Ornament'></div>
+			<div class="background-img" id="tree-on-snow-left" alt='Tree on Snow'></div><br>
+			<div class="background-img" id="candles" alt='Candles'></div>
+			<div class="background-img" id="bow" alt='Bow'></div>
+			<div class="background-img" id="red-ornament" alt='Red Ornament'></div>
+			<div class="background-img" id="bell-ornaments" alt='Bells'></div>	
+			<br>	
+		</div>	
+		
+		
+		<!-- Add characters -->	
+			<h2>Add a title</h2>
+			<img class='stickers title-thumb' src='images/2009.png' alt='2009 - Angled'>
+			<img class='stickers title-thumb' src='images/2010.png' alt='2010 - Arched'>
+			<img class='stickers title-thumb' src='images/2011.png' alt='2011 - Stacked'>
+			<img class='stickers title-thumb-long' src='images/2012.png' alt='2012 - One Line'>
+			<br>
+			
+	</div>
+	
+	<div id='controls-2'>
+			<!-- Add characters -->	
+			<h2>Click characters to add</h2>
+			<img class='stickers thumb' src='images/sam-the-snowman-full.png' alt='Sam the Snowman'>
+			<img class='stickers thumb' src='images/charlie-brown-linus.png' alt='Charie Brown and Linus'>
+			<br>
+			
+			<h2>Find your own images from Google</h2>
+			<input type='text' id='sticker-search' style="width:150px; margin-top:5px;">
+			<input type='button' id='sticker-search-btn' value='Search' style="margin-top:5px;">
+			<br>
+			<small>Ex: &ldquo;Mistletoe&rdquo;, &ldquo;Holly&rdquo;, etc.</small>
+			<div id='sticker-search-results'></div>					
+	</div>
+			
+	<div id='controls-3'>
+			<!-- Message -->	
+			<h2>Add a greeting</h2>
+			<input type="radio" class="messages" name="greeting" id="merry-christmas">&nbsp;
+			<label for="merry-christmas">Merry Christmas</label><br>
+			
+			<input type="radio" class="messages" name="greeting" id="congratulations">&nbsp;
+			<label for="congratulations">Happy Holidays</label><br>
+					
+		<!-- Recipient -->	
+			<h2>Add a custom message</h2>
+			<input type="text" id="recipient" maxlength="25" style="width:235px; height:50px;"><br>
+			<span id="recipient-length"></span>
+			<span class="error" id="recipient-error"></span>
+			
+		<!- Choose a font-->
+			<h2>Choose a font</h2>
+			<select name="fonts" id="fonts">
+				<option value="">--</option>
+				<option value="'Abril Fatface', cursive">Abril Fatface</option>
+				<option value="'Berkshire Swash', cursive">Berkshire Swash</option>
+				<option value="'Chango', cursive">Chango</option>
+				<option value="'Cherry Swash', cursive">Cherry Swash</option>
+				<optin value="'Codystar', cursive">Codystar</option>
+				<option value="'Eagle Lake', cursive">Eagle Lake</option>
+				<option value="'Great Vibes', cursive">Great Vibes</option>
+				<option value="'Helvetica', sans-serif">Helvetica</option>
+				<option value="'New Rocker', sans-serif">New Rocker</option>
+				<option value="'Oldenburg', cursive">Oldenburg</option>
+				<option value="'Snippet', sans-serif">Snippet</option>
+				<option value="'Varela Round', sans-serif">Varela Round</option>
+			</select>
+				
+		<!-- Color picker -->
+			<h2>Pick a font color</h2>
+			<div class="colors" id="red"></div>
+			<div class="colors" id="orange"></div>
+			<div class="colors" id="yellow"></div>
+			<div class="colors" id="green"></div>
+			<div class="colors" id="blue"></div>
+			<div class="colors" id="indigo"></div>
+			<div class="colors" id="violet"></div>
+			<br>
+			<br>
+			<div class="colors" id="black"></div>
+			<div class="colors" id="white"></div>
+			<div class="colors" id="cyan"></div>
+			<div class="colors" id="magenta"></div>
+			<div class="colors" id="purple"></div>
+			<div class="colors" id="brown"></div>
+			<div class="colors" id="gray"></div>
+			<br>
+	</div>
+			
+	<!-- End controls -->
+	
+	<footer>
+		© 2013 Frank Aveni
+	</footer>
+	
+</div>
+
+<script src="js/card-o-matic.js"></script>
+	
+</body>
+
+</html>
