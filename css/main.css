@@ -33,6 +33,7 @@ h2 {
 
 small {
 	font-family:Helvetica;
+	font-size:x-small;
 }
 
 h2:first-child {
@@ -49,6 +50,7 @@ h2:first-child {
 	border-radius: 50px;
 	-webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
+	margin: 7px 7px 0 0;
 }
 
 input[type=text] {
@@ -109,7 +111,7 @@ input[type=button]:active {
 	height:50px;
 	float:left;
 	clear: both;
-	margin-top: 50px;
+	margin-top: 10px;
 }
 
 
@@ -131,7 +133,7 @@ Layout
 /* Bottom left column */
 #controls-1 {
 	width:425px;
-	height:350px;
+	height:540px;
 	margin-right:20px;
 	float:left;
 }
@@ -139,26 +141,26 @@ Layout
 /* Bottom middle column */
 #controls-2 {
 	width:275px;
-	height:350px;
+	height:540px;
 	margin-right:40px;
 	float:left;
 }
 
 /* Bottom right column */
 #controls-3 {
-	width:185px;
-	height:350px;
-	margin-right:50px;
+	width:235px;
+	height:540px;
 	float:left;
 }
 
+
+/* Footer */
 footer {
 	height:50px;
 	width: 950px;
 	border: 10px solid white;
 	background: url(../images/footer-bg.png) center no-repeat;
 	float: left;
-	margin-top: 25px;
 	margin-bottom: 25px;
 	padding: 15px;
 	text-align: right;
@@ -175,7 +177,6 @@ Card
 	height:600px;
 	margin:0px auto;
 	float:left;
-	margin-bottom:10px;
 }
 
 #canvas {
@@ -193,6 +194,9 @@ Card
 	clear: both;
 	text-align: center;
 	background-color: black;
+	top: 560px;
+	position: absolute;
+	
 }
 
 .date-footer {

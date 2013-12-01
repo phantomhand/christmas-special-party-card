@@ -3,12 +3,19 @@
 /************************************/
 
 .colors {
-	width: 20px;
-	height: 20px;
+	width: 21px;
+	height: 21px;
 	float: left;
-	/* border: 1px solid gray; */
 	cursor: pointer;
-	margin-right: 6px;
+	margin-right: 5.075px;
+}
+
+#white {
+	background-color: white;
+}
+
+#black {
+	background-color: black;
 }
 
 #red {
@@ -26,8 +33,8 @@
 #green {
 	background-color: green;
 	border: 1px solid gray;
-	height: 18.25px;
-	width: 18.25px;
+	height: 19.35px;
+	width: 19.35px;
 }
 
 #blue {
@@ -42,48 +49,17 @@
 	background-color: violet;
 }
 
-#cyan {
-	background-color: cyan;
-}
-
-#magenta {
-	background-color: magenta;
-}
-
-#purple {
-	background-color: purple;
-}
-
-#black {
-	background-color: black;
-}
-
-#white {
-	background-color: white;
-	border: 1px solid gray;
-	height: 18.25px;
-	width: 18.25px;
-}
-
-#brown {
-	background-color: brown;
-}
-
-#gray {
-	background-color: gray;
-}
-
 
 /************************************/
 /* Backgrounds */
 /************************************/
 
 #backgrounds {
-	padding-bottom: 20px;
-	height: 125px;
+	padding-bottom: 40px;
+	height: 250px;
 }
 
-.background-img {
+.background-thumb {
 	width: 100px;
 	height: 60px;
 	float: left;
@@ -92,23 +68,13 @@
 	margin: 5px 5px 0px 0;
 }
 
-#candles {
-	background-image: url('../images/candles.jpg');
+#snowy-cabin {
+	background-image: url('../images/snowy-cabin.jpg');
 	background-size: cover;
 }
 
-#bow {
-	background-image: url('../images/white-bow.jpg');
-	background-size: cover;
-}
-
-#present {
-	background-image: url('../images/present.jpg');
-	background-size: cover;
-}
-
-#bell-ornaments {
-	background-image: url('../images/bell-ornaments.jpg');
+#cabin-sunset {
+	background-image: url('../images/cabin-sunset.jpg');
 	background-size: cover;
 }
 
@@ -117,8 +83,58 @@
 	background-size: cover;
 }
 
+#tree-on-snow-right {
+	background-image: url('../images/tree-on-snow-right.jpg');
+	background-size: cover;
+}
+
+#frozen-lake {
+	background-image: url('../images/frozen-lake.jpg');
+	background-size: cover;
+}
+
+#frozen-lake2 {
+	background-image: url('../images/frozen-lake2.jpg');
+	background-size: cover;
+}
+
+#snowy-field {
+	background-image: url('../images/snowy-field.jpg');
+	background-size: cover;
+}
+
+#snowy-trees {
+	background-image: url('../images/snowy-trees.jpg');
+	background-size: cover;
+}
+
+#bow {
+	background-image: url('../images/bow.jpg');
+	background-size: cover;
+}
+
+#pinecones {
+	background-image: url('../images/pinecones.jpg');
+	background-size: cover;
+}
+
 #crystal-ball-ornament {
 	background-image: url('../images/crystal-ball-ornament.jpg');
+	background-size: cover;
+}
+
+#bell-ornaments {
+	background-image: url('../images/bell-ornaments.jpg');
+	background-size: cover;
+}
+
+#tree-on-snow-left2 {
+	background-image: url('../images/tree-on-snow-left2.jpg');
+	background-size: cover;
+}
+
+#present {
+	background-image: url('../images/present.jpg');
 	background-size: cover;
 }
 
@@ -127,10 +143,11 @@
 	background-size: cover;
 }
 
-#pinecones {
-	background-image: url('../images/pinecones.jpg');
+#single-tree-left {
+	background-image: url('../images/single-tree-left.jpg');
 	background-size: cover;
 }
+
 
 
 /************************************/
@@ -164,8 +181,8 @@
 }
 
 .thumb {
-	height: 80px; 
-	width: auto;
+	max-height: 75px; 
+	max-width: 115px;
 }
 
 .title-thumb {
@@ -182,37 +199,10 @@
 
 .stickers_canvas {
 	position: absolute;
-	bottom: 0px;
+	bottom: 45px;
 	left: 0px;
 	z-index: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
