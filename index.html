@@ -28,11 +28,10 @@
 			<div id='canvas'>
 				<div id='greeting-output'></div>
 				<div id='recipient-output'></div>
-			</div>
-				
 				<div id="date-info">
 					<p class="date-footer">15th Annual Christmas Special Party &nbsp; &bull; &nbsp; Saturday, December 21st &nbsp; &bull; &nbsp; 9pm &nbsp; &bull; &nbsp; Address Goes Here</p>
 				</div>
+			</div>
 		</div>
 		
 		<div class="clearfix"></div>
@@ -49,20 +48,26 @@
 									
 		<!-- Background picture -->
 		<div id="backgrounds">
-			<h2>Pick a background image</h2>
-			<div class="background-img" id="pinecones" alt='Pinecones'></div>
-			<div class="background-img" id="present" alt='Presents'></div>
-			<div class="background-img" id="crystal-ball-ornament" alt='Crystal Ball Ornament'></div>
-			<div class="background-img" id="tree-on-snow-left" alt='Tree on Snow'></div><br>
-			<div class="background-img" id="candles" alt='Candles'></div>
-			<div class="background-img" id="bow" alt='Bow'></div>
-			<div class="background-img" id="red-ornament" alt='Red Ornament'></div>
-			<div class="background-img" id="bell-ornaments" alt='Bells'></div>	
-			<br>	
+			<h2>Pick a background</h2>
+			<div class="background-thumb" id="frozen-lake2" alt='Frozen Lake2'></div>
+			<div class="background-thumb" id="frozen-lake" alt='Frozen Lake'></div>
+			<div class="background-thumb" id="snowy-trees" alt='Snowy Trees'></div>
+			<div class="background-thumb" id="snowy-field" alt='Snowy Field'></div><br>
+			<div class="background-thumb" id="snowy-cabin" alt='Snowy Cabin'></div>
+			<div class="background-thumb" id="cabin-sunset" alt='Cabin Sunset'></div><br>
+			<div class="background-thumb" id="tree-on-snow-left2" alt='Tree on Snow Left 2'></div>
+			<div class="background-thumb" id="tree-on-snow-right" alt='Tree on Snow Right'></div>
+			<div class="background-thumb" id="bow" alt='Bow'></div>	
+			<div class="background-thumb" id="pinecones" alt='Pinecones'></div>
+			<div class="background-thumb" id="crystal-ball-ornament" alt='Crystal Ball Ornament'></div>
+			<div class="background-thumb" id="bell-ornaments" alt='Bells'></div><br>
+			<div class="background-thumb" id="tree-on-snow-left" alt='Tree on Snow Left'></div>
+			<div class="background-thumb" id="single-tree-left" alt='Single Tree on Left'></div>
+			<div class="background-thumb" id="present" alt='Present'></div>
+			<div class="background-thumb" id="red-ornament" alt='Red Ornament'></div>	
 		</div>	
 		
-		
-		<!-- Add characters -->	
+		<!-- Add a title -->	
 			<h2>Add a title</h2>
 			<img class='stickers title-thumb' src='images/2009.png' alt='2009 - Angled'>
 			<img class='stickers title-thumb' src='images/2010.png' alt='2010 - Arched'>
@@ -75,26 +80,38 @@
 	<div id='controls-2'>
 			<!-- Add characters -->	
 			<h2>Click characters to add</h2>
+			<img class='stickers thumb' src='images/santa-with-bell.png' alt='Santa with Bell'>
 			<img class='stickers thumb' src='images/sam-the-snowman-full.png' alt='Sam the Snowman'>
 			<img class='stickers thumb' src='images/charlie-brown-linus.png' alt='Charie Brown and Linus'>
-			<br>
-			
-			<h2>Find your own images from Google</h2>
-			<input type='text' id='sticker-search' style="width:150px; margin-top:5px;">
-			<input type='button' id='sticker-search-btn' value='Search' style="margin-top:5px;">
-			<br>
-			<small>Ex: &ldquo;Mistletoe&rdquo;, &ldquo;Holly&rdquo;, etc.</small>
-			<div id='sticker-search-results'></div>					
+			<img class='stickers thumb' src='images/jolly-santa.png' alt='Jolly Santa'>
+			<img class='stickers thumb' src='images/eo-jugband.png' alt="Emmett Otter's Jug Band">
+			<img class='stickers thumb' src='images/albert-the-mouse.png' alt='Albert the Mouse'>
+			<img class='stickers thumb' src='images/robot-santa.png' alt='Robot Santa'>
+			<img class='stickers thumb' src='images/frosty-dance.png' alt='Frosty Dances'>
+			<img class='stickers thumb' src='images/moomintroll.png' alt='Moomntroll'>
+			<img class='stickers thumb' src='images/fantastic-planet-robot.png' alt='Fantastic Planet Robot'>
+			<img class='stickers thumb' src='images/frosty-march.png' alt='Frosty Marchs'>
+			<img class='stickers thumb' src='images/briggs-snowman.png' alt="Briggs' Snowman">
+			<img class='stickers thumb' src='images/flying-santa.png' alt='Flying Santa'>
+			<img class='stickers thumb' src='images/rudolph-clarice.png' alt='Rudolph & Clarice'>
+			<img class='stickers thumb' src='images/penguins.png' alt='Penguins'>
+			<img class='stickers thumb' src='images/yukon-cornelius.png' alt='Yukon Cornelius'>
+			<img class='stickers thumb' src='images/frosty-snap.png' alt='Frosty Snaps'>
+			<img class='stickers thumb' src='images/snowball-family.png' alt='Snowball Family'>
+			<img class='stickers thumb' src='images/grinch-creep.png' alt='Grinch'>
+			<br>					
 	</div>
 			
 	<div id='controls-3'>
-			<!-- Message -->	
+		<!-- Message -->	
+			<!--
 			<h2>Add a greeting</h2>
 			<input type="radio" class="messages" name="greeting" id="merry-christmas">&nbsp;
 			<label for="merry-christmas">Merry Christmas</label><br>
 			
 			<input type="radio" class="messages" name="greeting" id="congratulations">&nbsp;
 			<label for="congratulations">Happy Holidays</label><br>
+			-->
 					
 		<!-- Recipient -->	
 			<h2>Add a custom message</h2>
@@ -103,7 +120,7 @@
 			<span class="error" id="recipient-error"></span>
 			
 		<!- Choose a font-->
-			<h2>Choose a font</h2>
+			<h2>Choose a font for your message</h2>
 			<select name="fonts" id="fonts">
 				<option value="">--</option>
 				<option value="'Abril Fatface', cursive">Abril Fatface</option>
@@ -122,6 +139,8 @@
 				
 		<!-- Color picker -->
 			<h2>Pick a font color</h2>
+			<div class="colors" id="black"></div>
+			<div class="colors" id="white"></div>
 			<div class="colors" id="red"></div>
 			<div class="colors" id="orange"></div>
 			<div class="colors" id="yellow"></div>
@@ -130,21 +149,21 @@
 			<div class="colors" id="indigo"></div>
 			<div class="colors" id="violet"></div>
 			<br>
+		
+		<!-- Sticker search with Google --> 
+			<h2>Find & add images from Google</h2>
+			<input type='text' id='sticker-search' style="width:145px; margin-top:5px;">
+			<input type='button' id='sticker-search-btn' value='Search' style="width: 70px; margin-top:6px;">
 			<br>
-			<div class="colors" id="black"></div>
-			<div class="colors" id="white"></div>
-			<div class="colors" id="cyan"></div>
-			<div class="colors" id="magenta"></div>
-			<div class="colors" id="purple"></div>
-			<div class="colors" id="brown"></div>
-			<div class="colors" id="gray"></div>
+			<small>Ex: &ldquo;Mistletoe&rdquo;, &ldquo;Holly&rdquo;, etc.</small>
 			<br>
+			<div id='sticker-search-results'></div>
 	</div>
 			
 	<!-- End controls -->
 	
 	<footer>
-		© 2013 Frank Aveni
+		© 2013 Frank Aveni / Phantom Hand
 	</footer>
 	
 </div>
