@@ -14,7 +14,7 @@ $('.colors').click(function(){
 
 /* Event listener for texture selection */
 
-$('.background-img').click(function(){
+$('.background-thumb').click(function(){
 	
 	var background_clicked = $(this).css('background-image');
 	
@@ -50,7 +50,7 @@ $('#recipient').keyup(function() {
 	var how_many_left = 25 - how_many_characters;
 	
 	if (how_many_left > 19) {
-		$('#recipient-error').css('color', 'black');
+		$('#recipient-error').css('color', 'white');
 		}
 	
 	else if (how_many_left == 0) {
@@ -126,29 +126,6 @@ $('#controls-1, #controls-2').on('click', '.stickers', function() {
 });
 
 
-/* class lecture method */
-
-//$('.stickers').click(function() {
-	
-	//var new_image = "img src="'++'"></img>";
-	
-	// Make a new clone of the image that was clicked	
-	//var new_image = $(this).clone();
-	
-	// Add a unique class to stickers in canvas
-	//new_image.addClass('stickers_canvas');
-	
-	// Place it into the canvas
-	//$('#canvas').prepend(new_image);
-	
-	// Make stickers in canvas draggable
-	//$('.stickers_canvas').draggable({containment: "parent"});
-	
-//});
-
-/*
-
-
 /* Sticker Search with AJAX
 
 https://developers.google.com/image-search/v1/jsondevguide#using_json
@@ -158,8 +135,7 @@ http://api.jquery.com/jQuery.getJSON/
 
 $('#sticker-search-btn').click(function() {
 
-	// First, clear out the results div in case we've already done a search
-	// FYI- The results div is where the new stickers go...so if we've done this search before, it wouldn't be empty
+	// Clear out the results div 
 	$('#sticker-search-results').html('');
 
 	// What search term did the user enter?
