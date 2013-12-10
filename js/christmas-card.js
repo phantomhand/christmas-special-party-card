@@ -122,9 +122,14 @@ $('#controls-1, #controls-2').on('click', '.stickers', function() {
 	
 	// Make that puppy draggable
 	new_sticker.draggable({containment: 'parent', opacity:.35});
+	
+	/* Remove a sticker from the canvas when it's double clicked */
+	$('.stickers_canvas').dblclick(function() {
+
+		$((this)).remove();
+	});	
 		
 });
-
 
 
 /* Sticker Search with AJAX
@@ -172,13 +177,6 @@ $('#sticker-search-btn').click(function() {
 	});			
 });
 
-
-/* Remove Sticker */
-
-$('#canvas').dblclick(function() {
-
-	$('.stickers_canvas').remove();
-});
 
 
 /* Start Over */
