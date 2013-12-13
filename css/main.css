@@ -12,14 +12,14 @@ html {
 
 
 * {
-	font-family:Helvetica;
+	font-family: Helvetica,  Arial, sans-serif;
 	color:#eee;
 }
 
 h1 {	
 	text-align:center;
-	font-family: 'Berkshire Swash', cursive;
-	font-size:40px;
+	font-family: 'Berkshire Swash', Helvetica, Arial, sans-serif;
+	font-size:35px;
 	margin-top:25px;
 	margin-bottom:25px;
 	color:white;
@@ -32,7 +32,7 @@ h2 {
 }
 
 small {
-	font-family:Helvetica;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size:x-small;
 }
 
