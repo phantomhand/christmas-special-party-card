@@ -100,7 +100,7 @@ $('#fonts').change(function(){
 /* Use the .on() method to also apply to the Google Image Stickers which are
 added *after* the page loads. To do this, use .on() and we delegate the listening for .stickers to the #controls div. */
 
-$('#controls-1, #controls-2').on('click', '.stickers', function() {
+$('#controls-1, #controls-2, #controls-3').on('click', '.stickers', function() {
 
 	// Clone the sticker that was clicked
 	var new_sticker = $(this).clone();
